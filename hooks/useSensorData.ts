@@ -14,8 +14,10 @@ const INITIAL_DATA: SolarPanelData = {
   lux: 0,
   battery: 0,
   temperature: 0,
+  humidity: 0,
   panel_efficiency: 0,
   charging_status: false,
+  timestamp: Date.now(),
 };
 
 export function useSensorData() {
