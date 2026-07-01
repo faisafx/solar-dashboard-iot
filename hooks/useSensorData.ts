@@ -99,8 +99,10 @@ export function useSensorData() {
             lux: Number(payload.lux) || 0,
             battery: Number(payload.battery) || 0,
             temperature: Number(payload.temperature) || 0,
+            humidity: Number(payload.humidity) || 0,
             panel_efficiency: Number(payload.panel_efficiency) || 0,
-            charging_status: Boolean(payload.charging_status)
+            charging_status: Boolean(payload.charging_status),
+            timestamp: Date.now()
           };
           
           addDataPoint(data);
